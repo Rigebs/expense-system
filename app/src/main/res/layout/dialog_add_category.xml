@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="Agregar una categoría"/>
+
+    <EditText
+        android:id="@+id/etNombreCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_text"
+        android:hint="Nombre de la categoría"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintColor"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/ImportantButtonBackground"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>

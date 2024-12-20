@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ResumenBackground">#092854</color>
+    <color name="CardViewBackground">#c4dafa</color>
+    <color name="CardViewSelectedBackground">#104897</color>
+    <color name="ActivityBackground">#a6c8f7</color>
+    <color name="DineroBackground">#e2edfd</color>
+    <color name="CardViewRegistrar">#1b397d</color>
+
+    <color name="ActivityRegistrarGastoBackground">#22479D</color>
+
+    <color name="hintColor">#8E9197</color>
+
+    <color name="ImportantButtonBackground">#4772d7</color>
+    <color name="SecondaryButtonBackground">#7b9ae3</color>
+    <color name="warning">#CC1515</color>
+</resources>

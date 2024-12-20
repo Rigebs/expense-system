@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".activity.ListaGastosActivity">
+
+    <TextView
+        android:id="@+id/tvTituloGastos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de gastos"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/etBuscar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Buscar..."
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloGastos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivBuscar"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintColor"
+        android:padding="16dp"/>
+
+    <ImageView
+        android:id="@+id/ivBuscar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/background_selector"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloGastos"
+        app:layout_constraintStart_toEndOf="@+id/etBuscar"
+        app:layout_constraintEnd_toStartOf="@+id/ivAvanzado"
+        app:layout_constraintBottom_toTopOf="@+id/lvGastos"
+        android:src="@drawable/buscar_icon"/>
+
+    <ImageView
+        android:id="@+id/ivAvanzado"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloGastos"
+        app:layout_constraintStart_toEndOf="@+id/ivBuscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/background_selector"
+        app:layout_constraintBottom_toTopOf="@+id/lvGastos"
+        android:src="@drawable/opciones_icon"/>
+
+    <ListView
+        android:id="@+id/lvGastos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/etBuscar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="14dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
